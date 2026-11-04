@@ -1,16 +1,18 @@
 {
   "name": "Harry Huynh",
-  "title": "Information Technology Engineer",
+  "title": "IT honours undergraduate",
   "location": "Ho Chi Minh City, Vietnam",
   "email": "phuongdai.saigon@gmail.com",
   "portraitImage": "/images/profile/harry-huynh.jpg",
-  "currentFocus": "Full-stack development, logic-based AI, and technical communication.",
+  "currentFocus": "Medical applications of AI at VNU-IU and the software tools that support research.",
   "hero": {
-    "headline": "Building software. Making ideas clear.",
-    "summary": "I'm an IT student and developer in Ho Chi Minh City, with experience in Python and Prolog research, full-stack applications, and technical writing."
+    "headline": "I study AI in medicine and build research software.",
+    "summary": "I'm an IT honours student at the University of the West of England (UWE Bristol) and a student researcher at VNU-IU. At Titan Technology, I built a command-line tool and a web interface for a logic-programming library."
   },
+  "aboutHeading": "I'm Harry Huynh.",
+  "aboutSummary": "My name is Huynh Phuong Dai. I'm studying for an honours bachelor's degree in Information Technology at UWE Bristol. Alongside my degree, I'm a student researcher at International University, VNU-HCM (VNU-IU), where I focus on applications of artificial intelligence in medicine.",
   "biography": [
-    "I'm Huynh Phuong Dai, also known as Harry Huynh. My background brings together software development, research, and teaching. I enjoy getting to know an unfamiliar system, building something useful with it, and making the work understandable to others.",
+    "I like the part of software engineering where understanding an idea isn't quite enough: someone else has to be able to run the code and make sense of what it does. That has shaped how I approach research tools, testing, and technical writing.",
     "During my R&D internship at Titan Technology Corporation, I worked with Python, Prolog, and the Popper inductive logic programming library. My contributions included a command-line interface, a React and Flask application, development tools, documentation, and CI/CD workflows with unit tests.",
     "At university, I led a nine-person team building a student-records web application and worked on database design and technical documentation. Alongside my studies, teaching English and robotics has helped me explain complicated ideas in a way people can use."
   ],
@@ -156,7 +158,7 @@
       "institution": "University of the West of England Bristol",
       "qualification": "Bachelor of Information Technology",
       "dates": "2025 - 2027",
-      "detail": "Information Technology. Expected graduation: October 2027."
+      "detail": "IT honours degree in progress. Expected graduation: October 2027."
     },
     {
       "institution": "International University, Vietnam National University",
