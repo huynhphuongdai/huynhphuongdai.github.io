@@ -44,6 +44,10 @@ code or new page types. Visitors retain their own light/dark mode preference.
 Future dates do not schedule publication. GitHub must successfully deploy each update.
 
 ## Manage Photos and Project Images
+On **Profile > Site photos**, choose a photo and write alt text for the homepage
+personal section or Writing author link. Remove a selection to hide that placement.
+The About portrait remains under **Profile > Introduction**.
+
 1. Use **Photos > Upload photos**, then create or open an album.
 2. Add photographs, describe them with alt text and captions, pick a cover,
    and use the arrow buttons to reorder. Preview and publish the selected album.

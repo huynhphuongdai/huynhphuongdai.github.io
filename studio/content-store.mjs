@@ -59,6 +59,9 @@ export function validate(id, value, publishing = false) {
     }
   }
   if (id === "content/profile.json") {
+    for (const key of ["personalImage", "writingImage"]) {
+      if (publishing && value[key] && !value[key + "Alt"]?.trim()) throw new Error("Describe each selected site photograph before publishing.");
+    }
     for (const key of ["name", "title", "location", "email", "currentFocus", "portraitImage"]) if (typeof value[key] !== "string") throw new Error("Invalid profile field: " + key);
     if (!value.hero || typeof value.hero.headline !== "string" || typeof value.hero.summary !== "string") throw new Error("Complete the homepage headline and summary.");
     for (const key of ["biography", "interests", "tools", "principles", "experience", "socials"]) if (!Array.isArray(value[key])) throw new Error("Invalid profile list: " + key);
@@ -68,7 +71,7 @@ export function validate(id, value, publishing = false) {
     if (!object || typeof object !== "object") return;
     for (const [key, val] of Object.entries(object)) {
       if (["href", "repository", "demo"].includes(key) && val && !/^https:\/\//i.test(val) && !(key === "href" && /^mailto:[^\s@]+@[^\s@]+$/i.test(val))) throw new Error("Use an https:// link or a valid mailto: email link.");
-      if (["src", "coverImage", "portraitImage", "resumeFile", "socialImage"].includes(key) && val && (!/^\/(images|files)\/[a-zA-Z0-9_./-]+$/.test(val) || val.split("/").includes(".."))) throw new Error("Use an uploaded image or a local public file.");
+      if (["src", "coverImage", "portraitImage", "resumeFile", "socialImage", "personalImage", "writingImage"].includes(key) && val && (!/^\/(images|files)\/[a-zA-Z0-9_./-]+$/.test(val) || val.split("/").includes(".."))) throw new Error("Use an uploaded image or a local public file.");
       if (typeof val === "object") checkLinks(val);
     }
   }

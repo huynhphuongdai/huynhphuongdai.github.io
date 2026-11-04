@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rss } from "lucide-react";
-import { getPosts, getSiteSettings } from "@/lib/content";
+import { getPosts, getProfile, getSiteSettings } from "@/lib/content";
+import Link from "next/link";
 import { WritingIndex } from "@/components/WritingIndex";
 import { absoluteUrl, assetPath } from "@/lib/site";
 
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function WritingPage() {
+  const profile = getProfile();
   const posts = getPosts().map(({ slug, title, date, description, readingTime, category, section }) => ({ slug, title, date, description, readingTime, category, section }));
   return (
     <>
@@ -20,7 +22,13 @@ export default function WritingPage() {
         <p className="section-kicker">{settings.navigation.writing}</p>
         <h1>{settings.writing.heading}</h1>
         <p>{settings.writing.description}</p>
-        <a className="text-link" href={assetPath("/rss.xml")}><Rss size={16} aria-hidden="true" /> Follow via RSS</a>
+        <div className="writing-author">
+          {profile.writingImage && <Link className="author-link" href="/about">
+            <img src={assetPath(profile.writingImage)} alt={profile.writingImageAlt || ""} width={76} height={96} />
+            <span>{profile.name}</span>
+          </Link>}
+          <a className="text-link" href={assetPath("/rss.xml")}><Rss size={16} aria-hidden="true" /> Follow via RSS</a>
+        </div>
       </section>
       <section className="section-shell writing-index" aria-labelledby="writing-archive"><h2 className="sr-only" id="writing-archive">Writing archive</h2><WritingIndex posts={posts} /></section>
     </>

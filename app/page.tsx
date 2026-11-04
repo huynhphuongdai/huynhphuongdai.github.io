@@ -45,7 +45,10 @@ export default function HomePage() {
       </section>}
 
       {appearance.showPersonal && <section className="section-shell section-block personal-section">
-        <div className="reveal"><p className="section-kicker">03 / Beyond the work</p><h2>{settings.home.personalHeading}</h2></div>
+        <div className="reveal">
+          <p className="section-kicker">03 / Beyond the work</p><h2>{settings.home.personalHeading}</h2>
+          {profile.personalImage && <img className="personal-photo" src={assetPath(profile.personalImage)} alt={profile.personalImageAlt || ""} width={640} height={480} loading="lazy" />}
+        </div>
         <div className="personal-copy reveal">
           <p>{profile.personalNote ?? profile.biography[profile.biography.length - 1]}</p>
           <div className="inline-links"><Link className="text-link" href="/about">About me <ArrowUpRight size={17} aria-hidden="true" /></Link><Link className="text-link" href="/photos">Photo journal <ArrowUpRight size={17} aria-hidden="true" /></Link></div>

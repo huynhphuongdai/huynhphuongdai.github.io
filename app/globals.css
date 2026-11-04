@@ -140,6 +140,12 @@ ul, ol { padding-left: 22px; }
 .home-writing .post-entry time { order: 2; font-size: 11px; }
 .personal-section, .about-section { display: grid; grid-template-columns: 1fr 1.3fr; gap: 72px; }
 .personal-section h2 { max-width: 340px; }
+.personal-photo { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; margin-top: 24px; }
+.writing-author { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; margin-top: 24px; }
+.writing-author .text-link { margin: 0; }
+.author-link { display: inline-flex; align-items: center; gap: 14px; font-weight: 600; }
+.author-link img { display: block; width: 76px; height: 96px; object-fit: cover; object-position: 30% 35%; border-radius: 4px; }
+.author-link:hover span { text-decoration: underline; }
 .personal-copy > p { font-family: var(--serif); font-size: 23px; line-height: 1.6; }
 .inline-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 18px; }
 .contact-band { background: #eaf1ed; }

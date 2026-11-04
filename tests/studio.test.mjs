@@ -119,6 +119,19 @@ test("older settings receive non-destructive CV and appearance defaults", () => 
   assert.throws(() => validate("content/appearance.json", { ...appearance, animations: "yes" }), /on or off/);
 });
 
+test("optional site photos require local image paths and alt text for publication", () => {
+  const id = "content/profile.json";
+  const profile = normalizeSettings(id, JSON.parse(fs.readFileSync(id, "utf8")));
+  for (const key of ["personalImage", "writingImage"]) {
+    const item = { ...profile, [key]: "/images/test.webp", [key + "Alt"]: "" };
+    assert.doesNotThrow(() => validate(id, item));
+    assert.throws(() => validate(id, item, true), /Describe/);
+    assert.doesNotThrow(() => validate(id, { ...item, [key + "Alt"]: "A group photograph" }, true));
+    assert.throws(() => validate(id, { ...item, [key]: "/images/../secret" }), /local/);
+    assert.throws(() => validate(id, { ...item, [key]: "https://example.org/photo.jpg" }), /local/);
+  }
+});
+
 test("CV updates preserve privacy and keep unrelated private uploads out of publication", async t => {
   const { store, repo } = fixture(t);
   const profile = normalizeSettings("content/profile.json", JSON.parse(fs.readFileSync("content/profile.json", "utf8")));

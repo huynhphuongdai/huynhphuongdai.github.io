@@ -19,6 +19,10 @@ export type Profile = {
   location: string;
   email: string;
   portraitImage: string;
+  personalImage?: string;
+  personalImageAlt?: string;
+  writingImage?: string;
+  writingImageAlt?: string;
   resumeFile?: string;
   resumeLabel?: string;
   showResume?: boolean;

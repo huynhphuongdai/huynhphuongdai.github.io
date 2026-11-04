@@ -1,5 +1,6 @@
 export const profileDefaults = {
   fullName: "", personalNote: "", aboutHeading: "", aboutSummary: "",
+  personalImage: "", personalImageAlt: "", writingImage: "", writingImageAlt: "",
   resumeFile: "", resumeLabel: "Download CV", showResume: true,
   education: [], languages: [], qualifications: [],
 };
@@ -11,6 +12,7 @@ export const profileGroups = {
   Introduction: ["name", "fullName", "title", "location", "portraitImage", "hero", "currentFocus", "personalNote", "aboutHeading", "aboutSummary", "biography", "interests"],
   "CV & career": ["resumeFile", "resumeLabel", "showResume", "experience", "education", "tools", "languages", "qualifications"],
   "Contact & links": ["email", "socials"],
+  "Site photos": ["personalImage", "personalImageAlt", "writingImage", "writingImageAlt"],
 };
 export const siteFields = {
   navigation: ["home", "work", "writing", "photos", "about", "contact"],
@@ -52,11 +54,14 @@ export function validateSettings(id, value) {
     if (value.readingSize !== undefined && !["standard", "large"].includes(value.readingSize)) throw new Error("Choose a supported reading size.");
   }
   if (id === "content/profile.json") {
-    for (const key of ["aboutHeading", "aboutSummary", "resumeLabel", "resumeFile"]) {
+    for (const key of ["aboutHeading", "aboutSummary", "resumeLabel", "resumeFile", "personalImage", "personalImageAlt", "writingImage", "writingImageAlt"]) {
       if (key in value && typeof value[key] !== "string") throw new Error(key + " must be text.");
     }
     if (value.showResume !== undefined && typeof value.showResume !== "boolean") throw new Error("CV visibility must be on or off.");
     if (value.resumeFile && !value.resumeFile.toLowerCase().endsWith(".pdf")) throw new Error("Choose a PDF for your CV.");
+    for (const key of ["personalImage", "writingImage"]) {
+      if (value[key] && !value[key].startsWith("/images/")) throw new Error("Choose a local photograph.");
+    }
     for (const key of ["education", "languages", "qualifications"]) {
       if (key in value && !Array.isArray(value[key])) throw new Error(key + " must be a list.");
     }
