@@ -13,9 +13,15 @@ export default function HomePage() {
   const posts = getPosts().slice(0, 3);
   return (
     <>
-      <section className="hero section-shell">
+      <section className={`hero section-shell${profile.portraitImage ? " hero-with-portrait" : ""}`}>
+        <div className="hero-identity">
         <p className="eyebrow">{profile.title}<span aria-hidden="true"> / </span>{profile.location}</p>
         <h1>{profile.name}<span className="name-period">.</span></h1>
+        </div>
+        {profile.portraitImage && <div className="hero-portrait">
+          <img src={assetPath(profile.portraitImage)} alt={`Portrait of ${profile.name}`} width={689} height={919} fetchPriority="high" />
+        </div>}
+        <div className="hero-introduction">
         <p className="hero-statement">{profile.hero.headline}</p>
         <p className="hero-lede">{profile.hero.summary}</p>
         <div className="hero-actions">
@@ -24,6 +30,7 @@ export default function HomePage() {
           <Link className="text-link" href="/writing">{settings.home.writingButton} <ArrowRight size={17} aria-hidden="true" /></Link>
         </div>
         <div className="hero-footnote"><span>{settings.home.focusLabel}</span><p>{profile.currentFocus}</p></div>
+        </div>
       </section>
 
       {appearance.showWork && <section className="section-shell section-block ruled-section" aria-labelledby="selected-work">

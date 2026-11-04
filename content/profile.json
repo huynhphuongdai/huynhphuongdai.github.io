@@ -2,7 +2,7 @@
   "fullName": "Huynh Phuong Dai",
   "personalNote": "I've taught English and robotics, helped organize international gaming communities, and trained in improvisation. Those experiences shape how I communicate, lead, and learn.",
   "aboutHeading": "I'm Harry Huynh.",
-  "aboutSummary": "My name is Huynh Phuong Dai. I'm studying for an honours bachelor's degree in Information Technology at UWE Bristol. Alongside my degree, I'm a student researcher at International University, VNU-HCM (VNU-IU), where I focus on applications of artificial intelligence in medicine.",
+  "aboutSummary": "My name is Huynh Phuong Dai. I specialize in web application design and architecture, from the interface people use to the databases behind it. I'm an IT honours student at UWE Bristol and a student researcher at International University, VNU-HCM (VNU-IU), where I study applications of AI in medicine.",
   "personalImage": "/images/studio/6368c968-60a1-42b4-ac4f-bd6016fb04e6.webp",
   "personalImageAlt": "A group selfie beneath the International University sign.",
   "writingImage": "/images/studio/bcbc567d-4865-4064-b3da-62d7dc532e8c.webp",
@@ -39,8 +39,8 @@
   "portraitImage": "/images/studio/8291251b-a4f4-4e0c-9a30-2f137a8ed040.webp",
   "currentFocus": "Medical applications of AI at VNU-IU and the software tools that support research.",
   "hero": {
-    "headline": "I study AI in medicine and build research software.",
-    "summary": "I'm an IT honours student at the University of the West of England (UWE Bristol) and a student researcher at VNU-IU. At Titan Technology, I built a command-line tool and a web interface for a logic-programming library."
+    "headline": "I design web applications and their architecture, and study how AI can support medicine.",
+    "summary": "I'm an IT honours student at the University of the West of England (UWE Bristol) and a student researcher at VNU-IU. At Titan Technology, I built a React and Flask interface and a command-line tool for a logic-programming library."
   },
   "biography": [
     "I like the part of software engineering where understanding an idea isn't quite enough: someone else has to be able to run the code and make sense of what it does. That has shaped how I approach research tools, testing, and technical writing.",

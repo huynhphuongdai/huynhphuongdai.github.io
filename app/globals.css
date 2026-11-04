@@ -95,6 +95,11 @@ ul, ol { padding-left: 22px; }
 .eyebrow { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .eyebrow span { color: #9ca9a1; }
 .hero { padding-top: 76px; padding-bottom: 44px; }
+.hero-with-portrait { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 32%); grid-template-areas: "identity portrait" "intro portrait"; column-gap: 6%; }
+.hero-identity { grid-area: identity; }
+.hero-introduction { grid-area: intro; }
+.hero-portrait { grid-area: portrait; align-self: center; overflow: hidden; width: 100%; aspect-ratio: 4 / 5; border-radius: 4px; }
+.hero-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; transform: scale(1.5); transform-origin: center 45%; }
 .hero h1 { font-size: 88px; line-height: 1.06; }
 .name-period { color: var(--accent); }
 .hero-statement { margin-top: 24px; font-size: 25px; line-height: 1.4; max-width: 740px; }
@@ -302,6 +307,9 @@ code { font-family: ui-monospace, Consolas, monospace; font-size: .85em; backgro
   .site-nav a { font-size: 13px; min-height: 46px; }
   .section-block { padding-block: 48px; }
   .hero { padding-top: 42px; padding-bottom: 30px; }
+  .hero-with-portrait { grid-template-columns: minmax(0, 1fr) clamp(94px, 30%, 144px); grid-template-areas: "identity portrait" "intro intro"; column-gap: 16px; }
+  .hero.hero-with-portrait h1 { font-size: 44px; }
+  .hero-portrait img { transform: scale(2.6); }
   .hero h1 { font-size: 58px; }
   .eyebrow { display: block; font-size: 11px; line-height: 1.8; max-width: 300px; }
   .eyebrow span { margin-inline: 6px; }
