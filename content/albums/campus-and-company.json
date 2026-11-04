@@ -1,0 +1,27 @@
+{
+  "title": "Campus and company",
+  "slug": "campus-and-company",
+  "description": "Faces and moments from university and a dinner with colleagues.",
+  "date": "2026-11-04",
+  "location": "University and community",
+  "coverImage": "/images/studio/6368c968-60a1-42b4-ac4f-bd6016fb04e6.webp",
+  "story": "Two moments together: a group photo at International University and a toast around a dinner table.",
+  "camera": "",
+  "sample": false,
+  "photos": [
+    {
+      "src": "/images/studio/6368c968-60a1-42b4-ac4f-bd6016fb04e6.webp",
+      "width": 1225,
+      "height": 919,
+      "alt": "A group selfie beneath the International University sign.",
+      "caption": "Together at International University."
+    },
+    {
+      "src": "/images/studio/0fcead19-44ec-4790-b5f2-d2f56729644a.webp",
+      "width": 1225,
+      "height": 919,
+      "alt": "A group raising glasses around a long dinner table.",
+      "caption": "Around the table."
+    }
+  ]
+}

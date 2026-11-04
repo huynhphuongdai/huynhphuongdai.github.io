@@ -1,0 +1,69 @@
+{
+  "title": "Mountains, lanterns, and tea",
+  "slug": "mountains-lanterns-and-tea",
+  "description": "From the snowline to the tea table: a travel journal in photographs.",
+  "date": "2026-11-04",
+  "location": "Travel journal",
+  "coverImage": "/images/studio/59eb466f-d6a7-4c5a-8c31-b1019ac2e13e.webp",
+  "story": "A few favourites from travelling with my mum. Snowy peaks give way to blossom-lined paths, paper lanterns, and a stop for tea.",
+  "camera": "",
+  "sample": false,
+  "photos": [
+    {
+      "src": "/images/studio/59eb466f-d6a7-4c5a-8c31-b1019ac2e13e.webp",
+      "width": 689,
+      "height": 919,
+      "alt": "Harry in a dark coat and scarf with snow-covered mountains behind him.",
+      "caption": "Blue sky and snow-covered peaks."
+    },
+    {
+      "src": "/images/studio/464f4553-258b-4749-8280-dd832014a18c.webp",
+      "width": 1225,
+      "height": 919,
+      "alt": "A smiling selfie in front of snowy peaks, with a red hood and bright scarf in the foreground.",
+      "caption": "A shared moment in the snow."
+    },
+    {
+      "src": "/images/studio/5a92eec0-a573-4791-b051-cfd2f9d4195b.webp",
+      "width": 517,
+      "height": 919,
+      "alt": "Harry beside a mountain lake, seated on a white yak.",
+      "caption": "By the water, beneath the mountains."
+    },
+    {
+      "src": "/images/studio/8291251b-a4f4-4e0c-9a30-2f137a8ed040.webp",
+      "width": 689,
+      "height": 919,
+      "alt": "Harry standing under a flowering tree on a sunny day.",
+      "caption": "Under the blossoms."
+    },
+    {
+      "src": "/images/studio/f1d848e5-4e95-41c1-b6a3-e87696cbba9d.webp",
+      "width": 1225,
+      "height": 919,
+      "alt": "Harry standing beside illuminated paper lanterns decorated with lettering and flowers.",
+      "caption": "An evening among the lanterns."
+    },
+    {
+      "src": "/images/studio/91b450ad-9a27-4873-926d-a41b301b3e46.webp",
+      "width": 689,
+      "height": 919,
+      "alt": "Harry seated behind a low tea table in front of carved wooden doors.",
+      "caption": "At the tea table."
+    },
+    {
+      "src": "/images/studio/f2be405e-2273-4055-9fae-a6e34c65b83b.webp",
+      "width": 735,
+      "height": 919,
+      "alt": "Harry in a cap and sunglasses beside a wooden lattice window and a vase of flowers.",
+      "caption": "A quiet corner by the window."
+    },
+    {
+      "src": "/images/studio/5b9789a2-6ca8-4aba-af41-d4b4de1a07c0.webp",
+      "width": 1225,
+      "height": 919,
+      "alt": "A selfie outside a tea shop, with Harry gesturing toward the counter.",
+      "caption": "A stop for tea."
+    }
+  ]
+}
