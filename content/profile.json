@@ -1,0 +1,176 @@
+{
+  "name": "Harry Huynh",
+  "title": "Information Technology Engineer",
+  "location": "Ho Chi Minh City, Vietnam",
+  "email": "phuongdai.saigon@gmail.com",
+  "portraitImage": "/images/profile/harry-huynh.jpg",
+  "currentFocus": "Full-stack development, logic-based AI, and technical communication.",
+  "hero": {
+    "headline": "Building software. Making ideas clear.",
+    "summary": "I'm an IT student and developer in Ho Chi Minh City, with experience in Python and Prolog research, full-stack applications, and technical writing."
+  },
+  "biography": [
+    "I'm Huynh Phuong Dai, also known as Harry Huynh. My background brings together software development, research, and teaching. I enjoy getting to know an unfamiliar system, building something useful with it, and making the work understandable to others.",
+    "During my R&D internship at Titan Technology Corporation, I worked with Python, Prolog, and the Popper inductive logic programming library. My contributions included a command-line interface, a React and Flask application, development tools, documentation, and CI/CD workflows with unit tests.",
+    "At university, I led a nine-person team building a student-records web application and worked on database design and technical documentation. Alongside my studies, teaching English and robotics has helped me explain complicated ideas in a way people can use."
+  ],
+  "interests": [
+    "Improvisation and acting",
+    "History and historical research",
+    "Online communities and gaming",
+    "Teaching and explaining ideas",
+    "Personal writing",
+    "Exploring unfamiliar topics"
+  ],
+  "tools": [
+    "Python",
+    "Prolog",
+    "React",
+    "Flask",
+    "JavaScript",
+    "HTML5",
+    "SQL / Microsoft SQL Server",
+    "Java",
+    "C / C++",
+    "MongoDB",
+    "Power BI",
+    "Git / GitLab",
+    "CI/CD and unit testing",
+    "NetBeans"
+  ],
+  "principles": [
+    "Make complicated ideas understandable.",
+    "Leave useful documentation for the next person.",
+    "Keep learning through practical work.",
+    "Communicate clearly, especially when working as a team."
+  ],
+  "experience": [
+    {
+      "company": "Titan Technology Corporation",
+      "role": "R&D Intern",
+      "dates": "Jul 2025 - Sep 2025",
+      "location": "Internship",
+      "summary": "Researched and developed a full-stack product using Popper inductive logic programming, Python, and Prolog.",
+      "achievements": [
+        "Built a CLI for running ILP from user input and designed a React and Flask interface.",
+        "Investigated the ILP library's architecture and created development tools and technical documentation.",
+        "Managed GitLab merge requests and conflicts, and designed CI/CD workflows with unit tests."
+      ],
+      "technologies": [
+        "Python",
+        "Prolog",
+        "React",
+        "Flask",
+        "GitLab",
+        "CI/CD"
+      ]
+    },
+    {
+      "company": "Kyna English",
+      "role": "English Teacher",
+      "dates": "Sep 2025 - Aug 2026",
+      "location": "Teaching",
+      "summary": "Taught academic English to working adults, with more than 300 hours of teaching experience.",
+      "achievements": [
+        "Helped learners prepare for IELTS exams.",
+        "Delivered lessons in presentations, public speaking, and improvisation based on learner needs."
+      ],
+      "technologies": []
+    },
+    {
+      "company": "International University, VNU-HCM",
+      "role": "Project Manager - Student Records",
+      "dates": "Feb 2024 - Jun 2024",
+      "location": "University project",
+      "summary": "Led a nine-person team through an 11-week web application project for displaying and visualizing academic data.",
+      "achievements": [
+        "Coordinated the project's technical direction, meetings, and documentation.",
+        "Conducted feasibility studies and risk assessments, and worked with stakeholders."
+      ],
+      "technologies": [
+        "Project planning",
+        "Technical documentation",
+        "Data visualization"
+      ]
+    },
+    {
+      "company": "International University, VNU-HCM",
+      "role": "Technical Writer & Database Architect",
+      "dates": "Sep 2023 - Jan 2024",
+      "location": "University project",
+      "summary": "Designed and optimized a database structure while documenting its development.",
+      "achievements": [
+        "Coordinated testing and validation.",
+        "Created technical documents and recorded the development process."
+      ],
+      "technologies": [
+        "C++",
+        "SQL",
+        "NetBeans"
+      ]
+    },
+    {
+      "company": "International University, VNU-HCM",
+      "role": "Research Contributor - Medical AI",
+      "dates": "Started Aug 2019",
+      "location": "Research collaboration",
+      "summary": "Contributed to a multi-university research project on integrating AI into medical processes.",
+      "achievements": [
+        "Collaborated with Thu Duc Hospital's board of medicine as part of the research program."
+      ],
+      "technologies": []
+    },
+    {
+      "company": "Luong The Vinh High School",
+      "role": "Robotics Teaching Assistant",
+      "dates": "Apr 2019 - Dec 2021",
+      "location": "Robotics programming course",
+      "summary": "Helped secondary-school students learn to program LEGO MINDSTORMS robots.",
+      "achievements": [
+        "Contributed to the teaching curriculum.",
+        "Explained programming concepts through practical robotics activities."
+      ],
+      "technologies": [
+        "LEGO MINDSTORMS"
+      ]
+    }
+  ],
+  "socials": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/HarryZ2k3"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/harryphuongdai/"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:phuongdai.saigon@gmail.com"
+    }
+  ],
+  "fullName": "Huynh Phuong Dai",
+  "personalNote": "I've taught English and robotics, helped organize international gaming communities, and trained in improvisation. Those experiences shape how I communicate, lead, and learn.",
+  "education": [
+    {
+      "institution": "University of the West of England Bristol",
+      "qualification": "Bachelor of Information Technology",
+      "dates": "2025 - 2027",
+      "detail": "Information Technology. Expected graduation: October 2027."
+    },
+    {
+      "institution": "International University, Vietnam National University",
+      "qualification": "Bachelor of Information Technology",
+      "dates": "Expected Oct 2027",
+      "detail": "Information technology systems and data management. Degree in progress."
+    }
+  ],
+  "languages": [
+    "Vietnamese",
+    "English"
+  ],
+  "qualifications": [
+    "IELTS 7.5",
+    "TOEFL iBT 96/120"
+  ]
+}

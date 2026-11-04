@@ -1,0 +1,22 @@
+import type { NextConfig } from "next";
+
+const basePath = normalizeBasePath(process.env.NEXT_PUBLIC_BASE_PATH ?? "");
+
+const nextConfig: NextConfig = {
+  output: "export",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+  ...(basePath ? { basePath, assetPrefix: basePath } : {}),
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
+};
+
+export default nextConfig;
+
+function normalizeBasePath(value: string): string {
+  if (!value || value === "/") return "";
+  return `/${value.replace(/^\/+|\/+$/g, "")}`;
+}
